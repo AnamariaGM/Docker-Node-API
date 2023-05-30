@@ -16,6 +16,6 @@
 
 ## What command did you use to get your custom ubuntu-echo container running?
 
-## What Dockerfile did you create for your NodeAPI container?
+## What Dockerfile did you create for your NodeAPI container?
 
 ## What command did you use to build your Node API container?
