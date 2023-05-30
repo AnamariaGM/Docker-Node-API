@@ -4,7 +4,7 @@
 
 ## What command(s) did you use to get the NGiNX container running and showing the Welcome to NGiNX page?
 
-## With Docker, what does it mean when you "expose a port"?
+## With Docker, what does it mean when you "expose a port"?
 
 ## What command(s) or approach did you use to get NGiNX showing your index.html file?
 
