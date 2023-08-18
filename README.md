@@ -58,13 +58,15 @@ At this point just showing the regular NGiNX "Welcome to nginx!" page is great
 
 ### 5. Running a container with your custom HTML page
 
-Re-visiting the NGiNX container, let's get it showing the HTML located within the [nginx-website](./nginx-website) directory. 
+Re-visiting the NGiNX container, let's get it showing the HTML located within the [nginx-website](./nginx-website) directory.
 
 Re-review the [official NGiNX Docker image documentation](https://hub.docker.com/_/nginx) and see if you can get the container showing the index.html.
 
+📷 - Remember to take some screenshots for your solutions file
+
 ## Building containers
 
-Now let's turn attention to building your own custom containers 
+Now let's turn attention to building your own custom containers
 
 ### 6. Building an echo container
 
@@ -99,7 +101,7 @@ Using knowledge from the previous section, can you get the container running?
 
 **💡 NOTE:** If you find that your terminal no longer works after running the container, simply close the terminal and open a new one.
 
-**💡 HINT:** You should see the container start, print "Hello, World!" and then immediately stop. 
+**💡 HINT:** You should see the container start, print "Hello, World!" and then immediately stop.
 
 ### 7. A note on tagging
 
@@ -135,12 +137,11 @@ Within the [node-api](./node-api) directory you will find the code for the appli
 
 See if you can populate that Dockerfile in order to get your Node API running - you should be able to visit http://localhost:8080/health-check in order to view the health of the application.
 
-**💡 HINT:** You should use the [Node official image](https://hub.docker.com/_/node) as your **Base Image** and have a look at the further reading for a guide that might help. 
+**💡 HINT:** You should use the [Node official image](https://hub.docker.com/_/node) as your **Base Image** and have a look at the further reading for a guide that might help.
 
 **💡 HINT:** Remember you will need to expose ports, the above example uses port 8080 which could be mapped to port 3000
 
 **💡 HINT:** You will need a command to start the application, take a look at the **package.json** and in particular the **start** script - you'll need that command.
-
 
 ### 9. Docker multi-stage builds
 
