@@ -1,42 +1,34 @@
 # Docker
 
-Throughout this repository you will explore various aspects of the containerisation tool [Docker](https://www.docker.com/)
+Up to now you have utilised Amazon EC2 for deploying applications. 
 
-You will both build containers and also run them using Docker
+You have provisioned instances and installed your applications on to the instance. You can think of this as a one to one mapping between instance and application.
 
-## Exercises
+As you know, instances have a cost 💰 for all the time they are running. 
 
-Consult the Submission Process below before working through the various exercises
+What if we could run many different applications on an instance, such as a Python application, Node application, Java application etc all running on the same instance. 
 
-Remember to commit and push after working through each exercise
+This is where containerisation comes in and the most popular tool in containerisation technology is Docker.
 
-## Running containers
+## Scenario
 
-You wil start off working through exercise for getting containers running.
+Throughout this exercise you will explore various aspects of the containerisation tool [Docker](https://www.docker.com/)
 
-Using containers on the public Docker container registry, the [Docker Hub](https://hub.docker.com/) and run publicly available Docker containers
+You will use Docker to build containers and also run them using Docker
 
-### 1. Docker installation
+## Instructions
 
-In order to work with Docker you will first need it installed on your own computer
+## 1. Docker familiarisation
 
-Navigate to [Docker.com](https://www.docker.com/) in order to install Docker Desktop
+By now you should have Docker installed. If this is not the case then navigate to [Docker.com](https://www.docker.com/) in order to install Docker Desktop.
 
 **🗒️ NOTE:** You do NOT need to have a Docker account or pay for anything when completing the exercises.
 
-### 2. Explore running containers
+You will work with Docker over the remainder of the programme. For this step, familiarise yourself with the Docker commands
 
-You can look at your current running containers by using the command:
+You can find a [handy cheatsheet on the Docker website](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
 
-```
-docker ps
-```
-
-If you use the `-a` flag it will show all current and past running containers
-
-```
-docker ps -a
-```
+Once you have explored the commands move on to Step 2.
 
 ### 3. Explore images you have built or "pulled down"
 
