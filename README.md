@@ -28,39 +28,31 @@ You will work with Docker over the remainder of the programme. For this step, fa
 
 You can find a [handy cheatsheet on the Docker website](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
 
-Once you have explored the commands move on to Step 2.
+Some of the commands might not be useful immediately until we create containers and run them, so once you have reviewed the cheet sheet and bookmarked it then move on to step 2.
 
-### 3. Explore images you have built or "pulled down"
+## 2. Running a container
 
-You can explore the images you have built or pulled down from Docker Hub by using the command:
+To run website based applications, developers will run them behind a web server. A popular web server is [NGINX](https://www.nginx.com/)
 
-```
-docker images
-```
+The Docker Hub has an [official NGINX Docker image](https://hub.docker.com/_/nginx), read through the Docker material and see if you can get the NGINX container running locally on your computer.
 
-### 4. Running a container
-
-Remember that NGiNX web server - instead of running it on an instance, let's try to get it running via Docker.
-
-The Docker Hub has an [official NGiNX Docker image](https://hub.docker.com/_/nginx), read through the Docker material and see if you can get the NGiNX container running locally on your computer.
-
-At this point just showing the regular NGiNX "Welcome to nginx!" page is great
+At this point just showing the regular NGINX "Welcome to nginx!" page is great
 
 **💡 HINT:** In order to see the webpage in your browser you will need to **Expose an external port**
 
-### 5. Running a container with your custom HTML page
+Once you have verified that you can see the NGINX homepage on your browser move on to step 3.
 
-Re-visiting the NGiNX container, let's get it showing the HTML located within the [nginx-website](./nginx-website) directory.
+### 3. Running a container with your custom HTML page
 
-Re-review the [official NGiNX Docker image documentation](https://hub.docker.com/_/nginx) and see if you can get the container showing the index.html.
+Re-visiting the NGINX container, let's get it showing the HTML located within the [nginx-website](./nginx-website) directory.
 
-📷 - Remember to take some screenshots for your solutions file
+Re-review the [official NGINX Docker image documentation](https://hub.docker.com/_/nginx) and see if you can get the container showing the index.html.
 
-## Building containers
+Once you have got your HTML page showing (instead of the default NGINX page) move on to Step 4.
+
+## 4. Building containers
 
 Now let's turn attention to building your own custom containers
-
-### 6. Building an echo container
 
 Create a new directory called **echo-command-app** and within that directory create a file called **Dockerfile**
 
@@ -74,6 +66,10 @@ CMD ["/usr/bin/echo", "Hello, World!"]
 ```
 
 Now navigate to that directory and let's build the container
+
+Using the Docker cheat sheet see if you can build that container.
+
+If you run `docker images` and you can see your container listed then move on to step 5.
 
 Run the command
 
