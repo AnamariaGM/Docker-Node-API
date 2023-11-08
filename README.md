@@ -79,9 +79,11 @@ Explore the docker cheatsheet again and this time try to work out the correct co
 
 If you did not update the code above you should see the terminal display `Hello, World!` if you container successfully ran.
 
-Before you move on to step 6, you might have noticed `latest` listed as the TAG. The tagging of images in docker is an important concept to understand and is how you will version your images. Have a [read over information around tagging](https://kodekloud.com/blog/docker-image-tag/) and maybe even try tagging your image with a new version.
+Before you move on to step 6, you might have noticed `latest` listed as the TAG. The tagging of images in docker is an important concept to understand and is how you will version your images. Have a [read over information around tagging](https://kodekloud.com/blog/docker-image-tag/).
 
-Once you have got your container successfully running and had a read of docker tagging move on to step 6.
+Tag your docker image with the version `1.0.0`
+
+Once you have got your container successfully running and tagged it with version 1.0.0 move on to step 6.
 
 ## 6. All together now...
 
