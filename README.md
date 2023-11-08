@@ -70,3 +70,35 @@ Now navigate to that directory and let's build the container
 Using the Docker cheat sheet see if you can build that container.
 
 If you run `docker images` and you can see your container listed then move on to step 5.
+
+## 5. Running containers
+
+Next, let's run the container. 
+
+Explore the docker cheatsheet again and this time try to work out the correct command for running your container.
+
+If you did not update the code above you should see the terminal display `Hello, World!` if you container successfully ran.
+
+Before you move on to step 6, you might have noticed `latest` listed as the TAG. The tagging of images in docker is an important concept to understand and is how you will version your images. Have a [read over information around tagging](https://kodekloud.com/blog/docker-image-tag/) and maybe even try tagging your image with a new version.
+
+Once you have got your container successfully running and had a read of docker tagging move on to step 6.
+
+## 6. All together now...
+
+Now it is time to create a brand new Docker image from scratch and get in running as a container 🙌
+
+Within the [node-api](./node-api) directory you will find the code for the application and an [empty Dockerfile](./node-api/Dockerfile)
+
+See if you can populate that Dockerfile in order to get your Node API running - you should be able to visit http://localhost:8080/health-check in order to view the health of the application.
+
+**💡 HINTS:** 
+
+* You should use the [Node official image](https://hub.docker.com/_/node) as your **Base Image** and have a look at the further reading for a guide that might help.
+
+* You will need to expose ports - look over the application code to see which port the application is listening on along with the link below for which port to bind to. You can then use this information and research how to expose ports in Docker. 
+
+* You will need a command to start the application, take a look at the **package.json** and in particular the **start** script - you'll need that command.
+
+If you are able to open up your browser and navigate to [http://localhost:8080/health-check](http://localhost:8080/health-check) to see the message **Server up and running** then you have completed this task! 
+
+Great work on your first steps with Docker.
