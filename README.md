@@ -1,5 +1,7 @@
 # Docker
 
+## Summary
+
 Up to now you have utilised Amazon EC2 for deploying applications. 
 
 You have provisioned instances and installed your applications on to the instance. You can think of this as a one to one mapping between instance and application.
@@ -9,6 +11,10 @@ As you know, instances have a cost 💰 for all the time they are running.
 What if we could run many different applications on an instance, such as a Python application, Node application, Java application etc all running on the same instance. 
 
 This is where containerisation comes in and the most popular tool in containerisation technology is Docker.
+
+## Prerequisites
+
+You will need to make sure Docker has been installed on your computer in order to follow through the steps.
 
 ## Scenario
 
@@ -93,6 +99,10 @@ Within the [node-api](./node-api) directory you will find the code for the appli
 
 See if you can populate that Dockerfile in order to get your Node API running - you should be able to visit http://localhost:8080/health-check in order to view the health of the application.
 
+If you are able to open up your browser and navigate to [http://localhost:8080/health-check](http://localhost:8080/health-check) to see the message **Server up and running** then you have completed this task! 
+
+Great work on your first steps with Docker.
+
 **💡 HINTS:** 
 
 * You should use the [Node official image](https://hub.docker.com/_/node) as your **Base Image** and have a look at the further reading for a guide that might help.
@@ -101,6 +111,6 @@ See if you can populate that Dockerfile in order to get your Node API running - 
 
 * You will need a command to start the application, take a look at the **package.json** and in particular the **start** script - you'll need that command.
 
-If you are able to open up your browser and navigate to [http://localhost:8080/health-check](http://localhost:8080/health-check) to see the message **Server up and running** then you have completed this task! 
+## Conclusion
 
-Great work on your first steps with Docker.
+During this sprint, you have explored Docker as a tool for creating container images as well as running them. You have also begun those steps of becoming familiar with the various Docker commands.
