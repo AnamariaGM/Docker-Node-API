@@ -12,7 +12,7 @@ Ensure Docker is installed on your computer before proceeding with the steps.
 ### Running the Docker Image
 1. Clone this repository to your local machine:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/AnamariaGM/Docker-Node-API.git
    ```
 2. Navigate to the node-api directory:
    ```bash
